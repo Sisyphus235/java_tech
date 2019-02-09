@@ -15,6 +15,15 @@ public class twoSum3Test {
 
     @Before
     public void before() throws Exception {
+        int i = 1, a = 0;
+        a = i++;
+        System.out.println(a);
+        assert a == 1;
+
+        int j = 1, b = 0;
+        b = ++j;
+        System.out.println(b);
+        assert b == 2;
     }
 
     @After
