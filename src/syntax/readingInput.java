@@ -47,11 +47,45 @@ public class readingInput {
                 count++;
             } else {
                 System.out.println("Invalid Number");
-                scanner.nextLine();
+                boolean isNext = scanner.hasNext();
+                if (isNext) {
+                    scanner.nextLine();
+                }
             }
         }
 
         scanner.close();
         System.out.println("The total of the input number is " + total);
+    }
+
+    public static void minMaxInput() {
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("Enter number.");
+            boolean isInt = scanner.hasNextInt();
+            if (isInt) {
+                int intInput = scanner.nextInt();
+                if (intInput > max) {
+                    max = intInput;
+                }
+                if (intInput < min) {
+                    min = intInput;
+                }
+            } else {
+                if (min != Integer.MAX_VALUE) {
+                    System.out.println("The min number is " + min + ", and the max number is " + max + ".");
+                } else {
+                    System.out.println("No number entered");
+                }
+
+                break;
+            }
+            scanner.nextLine();
+        }
+
+        scanner.close();
     }
 }
