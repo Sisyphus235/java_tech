@@ -68,7 +68,7 @@ public class bankOOP {
     }
 
     public void withdrawFunds(double funds) {
-        if (funds > 0 && this.balance > funds) {
+        if (funds > 0 && this.balance >= funds) {
             this.balance -= funds;
         } else {
             System.out.println("invalid funds");
