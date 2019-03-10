@@ -29,5 +29,29 @@ public class readingInput {
             System.out.println("Unable to parse birth year");
         }
 
+        scanner.close();
+
+    }
+
+    public static void sumInput() {
+        Scanner scanner = new Scanner(System.in);
+        int count = 1;
+        int total = 0;
+
+        while (count <= 10) {
+            System.out.println("Enter number #" + count);
+            boolean hasNextInt = scanner.hasNextInt();
+            if (hasNextInt) {
+                int inputNumber = scanner.nextInt();
+                total += inputNumber;
+                count++;
+            } else {
+                System.out.println("Invalid Number");
+                scanner.nextLine();
+            }
+        }
+
+        scanner.close();
+        System.out.println("The total of the input number is " + total);
     }
 }
