@@ -4,11 +4,14 @@ import syntax.*;
 public class Main {
 
     public static void main(String[] args) {
-        vipOOP voidAccount = new vipOOP();
-        vipOOP twoParamsAccount = new vipOOP("name", 1000);
-        System.out.println(twoParamsAccount.getName() + twoParamsAccount.getCreditLimit() + twoParamsAccount.getEmail());
-        vipOOP account = new vipOOP("all", 10000, "email");
-        System.out.println(account.getName() + account.getCreditLimit() + account.getEmail());
+        OOPinheritance obj = new OOPinheritance("attr", "subattr");
+        obj.printAttribute();
+
+//        vipOOP voidAccount = new vipOOP();
+//        vipOOP twoParamsAccount = new vipOOP("name", 1000);
+//        System.out.println(twoParamsAccount.getName() + twoParamsAccount.getCreditLimit() + twoParamsAccount.getEmail());
+//        vipOOP account = new vipOOP("all", 10000, "email");
+//        System.out.println(account.getName() + account.getCreditLimit() + account.getEmail());
 
 //        bankOOP account = new bankOOP(100);
 //        System.out.println("Balance is " + account.getBalance());
