@@ -4,8 +4,8 @@ import syntax.*;
 public class Main {
 
     public static void main(String[] args) {
-        OOPinheritance obj = new OOPinheritance("attr", "subattr");
-        obj.printAttribute();
+//        OOPinheritance obj = new OOPinheritance("attr", "subattr");
+//        obj.printAttribute();
 
 //        vipOOP voidAccount = new vipOOP();
 //        vipOOP twoParamsAccount = new vipOOP("name", 1000);
@@ -27,9 +27,11 @@ public class Main {
 //        System.out.println("Balance is " + account.getBalance());
 
 
-//        OOP obj = new OOP();
-//        obj.setAttribute("Input Attribute");
-//        System.out.println("Attribute is " + obj.getAttribute());
+        OOPComposition composition = new OOPComposition("name", 10);
+        OOP obj = new OOP("attribute", composition);
+        obj.setAttribute("Input Attribute");
+        System.out.println("Attribute is " + obj.getAttribute());
+        System.out.println(obj.getComposition().getCompositionName());
 
 //        readingInput.minMaxInput();
 //        readingInput.sumInput();
