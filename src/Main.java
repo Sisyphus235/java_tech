@@ -31,7 +31,7 @@ public class Main {
         OOP obj = new OOP("attribute", composition);
         obj.setAttribute("Input Attribute");
         System.out.println("Attribute is " + obj.getAttribute());
-        System.out.println(obj.getComposition().getCompositionName());
+        obj.loadComposition();
 
 //        readingInput.minMaxInput();
 //        readingInput.sumInput();

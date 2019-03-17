@@ -30,7 +30,7 @@ public class OOP {
         System.out.println(this.attribute);
     }
 
-    public OOPComposition getComposition() {
-        return composition;
+    public void loadComposition(){
+        composition.start();
     }
 }

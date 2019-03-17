@@ -16,4 +16,8 @@ public class OOPComposition {
     public int getCompositionSize() {
         return compositionSize;
     }
+
+    public void start() {
+        System.out.println("It's " + compositionName + " with size " + compositionSize);
+    }
 }
