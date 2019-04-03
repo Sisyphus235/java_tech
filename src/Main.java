@@ -4,6 +4,11 @@ import syntax.*;
 public class Main {
 
     public static void main(String[] args) {
+        int[] myArray = {4, 2, 5, 3, 78, 65};
+        array.printArray(myArray);
+        array.sortInteger(myArray);
+        array.printArray(myArray);
+
 //        OOPinheritance obj = new OOPinheritance("attr", "subattr");
 //        obj.printAttribute();
 
@@ -27,11 +32,11 @@ public class Main {
 //        System.out.println("Balance is " + account.getBalance());
 
 
-        OOPComposition composition = new OOPComposition("name", 10);
-        OOP obj = new OOP("attribute", composition);
-        obj.setAttribute("Input Attribute");
-        System.out.println("Attribute is " + obj.getAttribute());
-        obj.loadComposition();
+//        OOPComposition composition = new OOPComposition("name", 10);
+//        OOP obj = new OOP("attribute", composition);
+//        obj.setAttribute("Input Attribute");
+//        System.out.println("Attribute is " + obj.getAttribute());
+//        obj.loadComposition();
 
 //        readingInput.minMaxInput();
 //        readingInput.sumInput();
