@@ -1,13 +1,19 @@
 import syntax.*;
 
+import java.util.Arrays;
+
 
 public class Main {
 
     public static void main(String[] args) {
-        int[] myArray = {4, 2, 5, 3, 78, 65};
+        int[] myArray = {4, 2, 5, 3, 78, 21, 65};
+        int[] copyArray = Arrays.copyOf(myArray, myArray.length);
         array.printArray(myArray);
         array.sortInteger(myArray);
         array.printArray(myArray);
+        System.out.println(Arrays.toString(copyArray));
+        array.reverse(copyArray);
+        System.out.println(Arrays.toString(copyArray));
 
 //        OOPinheritance obj = new OOPinheritance("attr", "subattr");
 //        obj.printAttribute();
