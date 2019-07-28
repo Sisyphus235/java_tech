@@ -1,5 +1,6 @@
-package arraysAndStrings;
+package array;
 
+import arraysAndStrings.twoSum2;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
@@ -13,7 +14,7 @@ import java.util.Arrays;
  * @since <pre>Jan 28, 2019</pre>
  * @version 1.0
  */
-public class twoSum2Test {
+public class lc1TwoSum2Test {
 
     @Before
     public void before() throws Exception {
