@@ -42,4 +42,15 @@ public class lc120Triangle {
         }
         return min;
     }
+    public int solution2(List<List<Integer>> triangle) {
+        // 从 triangle 最后一行向前遍历，每一行遍历的时候 dpArray 的当前元素等于当前和下一个位置 dpArray 较小的值 + 三角形当前位置的值
+        // dpArray[i] = min(dpArray[i], dpArray[i+1]) + triangle[i][j]
+        int [] dpArray = new int[triangle.size() + 1];
+        for (int i = triangle.size() - 1; i >= 0; i--) {
+            for (int j = 0; j < triangle.get(i).size(); j++) {
+                dpArray[j] = Math.min(dpArray[j], dpArray[j + 1]) + triangle.get(i).get(j);
+            }
+        }
+        return dpArray[0];
+    }
 }
